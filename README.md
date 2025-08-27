@@ -1,2 +1,546 @@
-# safire.github.io
-Cellshop
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Namibia Phone Fix | Fast & Affordable Phone Repairs</title>
+  <meta name="description" content="Professional cell phone repair services in Namibia. Screen, battery, water damage & more. Same-day service.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    ul {
+      list-style: none;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #c1121f;
+    }
+    .text-center {
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      background: #1d3557;
+      color: white;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #a8dadc;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #a8dadc;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1602111795295-76c61d1c4e5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero .btn {
+      background: #2a9d8f;
+      font-size: 1.1rem;
+    }
+    .hero .btn:hover {
+      background: #21867a;
+    }
+
+    /* Features */
+    .features {
+      padding: 60px 0;
+      background: #f1faee;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .feature-item {
+      text-align: center;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .feature-icon {
+      font-size: 2.5rem;
+      color: #e63946;
+      margin-bottom: 15px;
+    }
+
+    /* Services */
+    .services {
+      padding: 80px 0;
+      background: white;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #1d3557;
+      text-align: center;
+    }
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .service-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+    .service-card h3 {
+      background: #1d3557;
+      color: white;
+      padding: 15px;
+      margin: 0;
+    }
+    .service-card p {
+      padding: 15px;
+    }
+
+    /* How It Works */
+    .how-it-works {
+      padding: 80px 0;
+      background: #457b9d;
+      color: white;
+    }
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .step {
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      padding: 20px;
+    }
+    .step-number {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: white;
+      color: #457b9d;
+      border-radius: 50%;
+      line-height: 50px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    /* Pricing */
+    .pricing {
+      padding: 80px 0;
+      background: #f1faee;
+    }
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .price-table th, .price-table td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .price-table th {
+      background: #1d3557;
+      color: white;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 80px 0;
+      background: #1d3557;
+      color: white;
+    }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .testimonial {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .customer {
+      font-weight: bold;
+    }
+
+    /* Contact */
+    .contact {
+      padding: 80px 0;
+      background: white;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .contact-info h3 {
+      color: #1d3557;
+      margin-bottom: 20px;
+    }
+    .contact-details {
+      margin-bottom: 20px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      width: 100%;
+    }
+
+    /* Footer */
+    footer {
+      background: #1d3557;
+      color: #a8dadc;
+      padding: 40px 0;
+      text-align: center;
+    }
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .social-links {
+      margin: 20px 0;
+    }
+    .social-links a {
+      color: #a8dadc;
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+    .social-links a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 15px;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">Namibia Phone Fix</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Fast & Reliable Phone Repairs in Namibia</h1>
+      <p>We fix cracked screens, dead batteries, water damage & more — with genuine parts, same-day service, and a 90-day warranty. Serving Windhoek, Walvis Bay, Swakopmund & beyond!</p>
+      <a href="#contact" class="btn">Book a Repair Now</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-tools"></i></div>
+          <h3>Expert Technicians</h3>
+          <p>Certified repair specialists with years of experience.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Same-Day Service</h3>
+          <p>Most repairs completed in under 2 hours.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>90-Day Warranty</h3>
+          <p>All repairs protected with a full warranty.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-truck"></i></div>
+          <h3>Pickup & Delivery</h3>
+          <p>Free in Windhoek & Walvis Bay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="service-list">
+        <div class="service-card">
+          <h3>Screen Replacement</h3>
+          <p>Fix cracked or unresponsive screens on iPhone, Samsung, Huawei & more.</p>
+        </div>
+        <div class="service-card">
+          <h3>Battery Replacement</h3>
+          <p>Restore battery life with high-quality replacements.</p>
+        </div>
+        <div class="service-card">
+          <h3>Water Damage Repair</h3>
+          <p>Emergency fixes for phones exposed to water.</p>
+        </div>
+        <div class="service-card">
+          <h3>Charging Port Fix</h3>
+          <p>Fix loose or dirty charging ports quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Book Online</h3>
+          <p>Call or fill out our quick form.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Drop Off or Pickup</h3>
+          <p>We collect or you visit our shop.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Free Diagnosis</h3>
+          <p>We inspect and give a no-obligation quote.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Fast Repair</h3>
+          <p>We fix your phone with quality parts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Transparent Pricing</h2>
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Starting Price (NAD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>iPhone Screen Repair</td>
+            <td>N$850</td>
+          </tr>
+          <tr>
+            <td>Samsung Galaxy Screen</td>
+            <td>N$950</td>
+          </tr>
+          <tr>
+            <td>Battery Replacement</td>
+            <td>N$650</td>
+          </tr>
+          <tr>
+            <td>Charging Port Repair</td>
+            <td>N$550</td>
+          </tr>
+          <tr>
+            <td>Water Damage Service</td>
+            <td>N$700</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>"Fixed my iPhone 12 screen in under 2 hours! Great price and service."</p>
+          <div class="customer">— Linda, Windhoek</div>
+        </div>
+        <div class="testimonial">
+          <p>"They picked up my phone from my office. So convenient and professional."</p>
+          <div class="customer">— Thabo, Walvis Bay</div>
+        </div>
+        <div class="testimonial">
+          <p>"Saved me hundreds compared to the official store. Highly recommend!"</p>
+          <div class="customer">— Anna, Swakopmund</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact & Book a Repair</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <div class="contact-details">
+            <p><i class="fas fa-phone"></i> +264 81 123 4567</p>
+            <p><i class="fas fa-envelope"></i> repairs@namibiaphonefix.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Klein Windhoek, Windhoek, Namibia</p>
+          </div>
+          <h3>Business Hours</h3>
+          <p>Mon–Fri: 8:00 AM – 5:00 PM</p>
+          <p>Sat: 9:00 AM – 1:00 PM</p>
+          <p>Sun: Closed</p>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="tel" name="phone" placeholder="Your Phone" required />
+            <input type="email" name="email" placeholder="Your Email" />
+            <select name="service" required>
+              <option value="">Select Service</option>
+              <option value="screen">Screen Replacement</option>
+              <option value="battery">Battery Replacement</option>
+              <option value="water">Water Damage</option>
+              <option value="port">Charging Port Repair</option>
+              <option value="other">Other</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Describe the issue..."></textarea>
+            <button type="submit" class="btn">Book Repair</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="logo" style="color: #a8dadc; font-size: 1.8rem;">Namibia Phone Fix</div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/264811234567"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Namibia Phone Fix. All rights reserved. | <a href="#" style="color: #a8dadc;">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
