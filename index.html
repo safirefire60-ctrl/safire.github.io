@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Safire Phone Fix | Fast & Affordable Phone Repairs</title>
+  <title>Namibia Phone Fix | Fast & Affordable Phone Repairs</title>
   <meta name="description" content="Professional cell phone repair services in Namibia. Screen, battery, water damage & more. Same-day service.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
@@ -84,7 +83,7 @@
 
     /* Hero Section */
     .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1602111795295-76c61d1c4e5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/7925776/pexels-photo-7925776.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&dpr=1') no-repeat center center/cover;
       color: white;
       padding: 120px 0;
       text-align: center;
@@ -156,6 +155,11 @@
     }
     .service-card:hover {
       transform: translateY(-10px);
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
     .service-card h3 {
       background: #1d3557;
@@ -238,13 +242,26 @@
       background: rgba(255,255,255,0.1);
       padding: 20px;
       border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .testimonial-text {
+      flex: 1;
     }
     .testimonial p {
       font-style: italic;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     .customer {
       font-weight: bold;
+      font-size: 0.9rem;
     }
 
     /* Contact */
@@ -318,6 +335,10 @@
       .contact-grid {
         grid-template-columns: 1fr;
       }
+      .testimonial {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -326,7 +347,7 @@
   <!-- Header -->
   <header>
     <div class="container header-content">
-      <div class="logo">Safire Tech Shop</div>
+      <div class="logo">Namibia Phone Fix</div>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -382,18 +403,22 @@
       <h2 class="section-title">Our Services</h2>
       <div class="service-list">
         <div class="service-card">
+          <img src="https://images.pexels.com/photos/5134406/pexels-photo-5134406.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Phone screen repair in progress">
           <h3>Screen Replacement</h3>
           <p>Fix cracked or unresponsive screens on iPhone, Samsung, Huawei & more.</p>
         </div>
         <div class="service-card">
+          <img src="https://images.pexels.com/photos/15921114/pexels-photo-15921114.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Battery replacement for mobile phone">
           <h3>Battery Replacement</h3>
           <p>Restore battery life with high-quality replacements.</p>
         </div>
         <div class="service-card">
+          <img src="https://images.pexels.com/photos/14867510/pexels-photo-14867510.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Water damaged phone being repaired">
           <h3>Water Damage Repair</h3>
           <p>Emergency fixes for phones exposed to water.</p>
         </div>
         <div class="service-card">
+          <img src="https://images.pexels.com/photos/10297571/pexels-photo-10297571.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1" alt="Technician fixing charging port">
           <h3>Charging Port Fix</h3>
           <p>Fix loose or dirty charging ports quickly.</p>
         </div>
@@ -473,16 +498,25 @@
       <h2 class="section-title">What Our Customers Say</h2>
       <div class="testimonial-grid">
         <div class="testimonial">
-          <p>"Fixed my iPhone 12 screen in under 2 hours! Great price and service."</p>
-          <div class="customer">— Mhani, Windhoek</div>
+          <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Happy customer Linda">
+          <div class="testimonial-text">
+            <p>"Fixed my iPhone 12 screen in under 2 hours! Great price and service."</p>
+            <div class="customer">— Linda, Windhoek</div>
+          </div>
         </div>
         <div class="testimonial">
-          <p>"They picked up my phone from my office. So convenient and professional."</p>
-          <div class="customer">— Sara, Walvis Bay</div>
+          <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Happy customer Thabo">
+          <div class="testimonial-text">
+            <p>"They picked up my phone from my office. So convenient and professional."</p>
+            <div class="customer">— Thabo, Walvis Bay</div>
+          </div>
         </div>
         <div class="testimonial">
-          <p>"Saved me hundreds compared to the official store. Highly recommend!"</p>
-          <div class="customer">— Anna, Swakopmund</div>
+          <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="Happy customer Anna">
+          <div class="testimonial-text">
+            <p>"Saved me hundreds compared to the official store. Highly recommend!"</p>
+            <div class="customer">— Anna, Swakopmund</div>
+          </div>
         </div>
       </div>
     </div>
@@ -496,8 +530,8 @@
         <div class="contact-info">
           <h3>Get In Touch</h3>
           <div class="contact-details">
-            <p><i class="fas fa-phone"></i> +264 81 4844 834</p>
-            <p><i class="fas fa-envelope"></i> safirefire60@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +264 81 123 4567</p>
+            <p><i class="fas fa-envelope"></i> repairs@namibiaphonefix.com</p>
             <p><i class="fas fa-map-marker-alt"></i> Klein Windhoek, Windhoek, Namibia</p>
           </div>
           <h3>Business Hours</h3>
@@ -543,4 +577,3 @@
 
 </body>
 </html>
-
